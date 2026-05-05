@@ -40,7 +40,7 @@ export const TEAM_MEMBERS = [
     name: "Farhan",
     division: "HUMAS",
     role: "Content Creator",
-    image: "/profil/Farhan - HUMAS.png",
+    image: "/profil/Farhan - Humas.png",
     bio: "Jika kau lapar makanlah, jika kau haus minumlah.",
     instagram: "https://instagram.com/FARHAN",
   },
