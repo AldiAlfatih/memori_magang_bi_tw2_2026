@@ -88,7 +88,7 @@ const GridMotion: React.FC<GridMotionProps> = ({ items = [], gradientColor = 'bl
       >
         <div className="gridMotion-container">
           {rows.map((rowItems, rowIndex) => (
-            <div key={rowIndex} className="row" ref={el => (rowRefs.current[rowIndex] = el)}>
+            <div key={rowIndex} className="row" ref={el => { rowRefs.current[rowIndex] = el; }}>
               {rowItems.map((content, itemIndex) => {
                 const isImage = typeof content === 'string' && (content.startsWith('http') || content.startsWith('/') || content.includes('.jpg') || content.includes('.jpeg') || content.includes('.png'));
                 

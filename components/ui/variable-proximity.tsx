@@ -64,7 +64,7 @@ export default function VariableProximity({
       {label.split("").map((char, index) => (
         <span
           key={index}
-          ref={(el) => (letterRefs.current[index] = el)}
+          ref={(el) => { letterRefs.current[index] = el; }}
           className="inline-block transition-all duration-200 ease-out"
           style={{ fontVariationSettings: fromFontVariationSettings }}
         >
