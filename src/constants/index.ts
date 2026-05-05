@@ -40,7 +40,7 @@ export const TEAM_MEMBERS = [
     name: "Farhan",
     division: "HUMAS",
     role: "Content Creator",
-    image: "/profil/farhan - humas.jpeg",
+    image: "/profil/Farhan - HUMAS.png",
     bio: "Jika kau lapar makanlah, jika kau haus minumlah.",
     instagram: "https://instagram.com/FARHAN",
   },
@@ -58,7 +58,7 @@ export const TEAM_MEMBERS = [
     name: "Stevelin Friska",
     division: "FDSEK",
     role: "IT",
-    image: "/profil/Stevelin Friska - FDSEK.jpeg",
+    image: "/profil/Stevelin Friska - FDSEK.png",
     bio: "Satu-satunya batasanmu adalah pikiranmu sendiri.",
     instagram: "https://instagram.com/stvlnfrsk__",
   }
