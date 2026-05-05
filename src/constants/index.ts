@@ -47,7 +47,7 @@ export const TEAM_MEMBERS = [
   {
     id: 6,
     name: "Muhammad Aldi Alfatih",
-    division: "PUR",
+    division: "KPKP",
     role: "IT",
     image: "/profil/Muhammad Aldi Alfatih - PUR.jpg",
     bio: "Tantangan adalah kesempatan",
