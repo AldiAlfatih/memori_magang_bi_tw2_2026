@@ -10,6 +10,7 @@ import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconX,
+  IconBrandInstagram,
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
@@ -187,10 +188,6 @@ export const Card = ({
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
-    if (card.link) {
-      window.open(card.link, "_blank");
-      return;
-    }
     setOpen(true);
   };
 
@@ -216,7 +213,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
+              className="relative z-[60] mx-auto my-10 h-fit max-w-3xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
             >
               <button
                 className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -232,9 +229,22 @@ export const Card = ({
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
+                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white flex items-center gap-4"
               >
                 {card.title}
+                {card.link && (
+                  <a
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-100 dark:bg-neutral-800 text-brand-dark hover:bg-brand-dark hover:text-white transition-all duration-300 shadow-sm text-sm font-medium"
+                    title="View on Instagram"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <IconBrandInstagram className="h-5 w-5" />
+                    <span>Lihat di Instagram</span>
+                  </a>
+                )}
               </motion.p>
               <div className="py-10">{card.content}</div>
             </motion.div>
@@ -247,6 +257,11 @@ export const Card = ({
         className="relative z-10 flex h-80 w-56 flex-col items-start justify-end overflow-hidden rounded-3xl bg-gray-100 md:h-[28rem] md:w-72 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-full bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+        {card.link && (
+          <div className="absolute top-4 right-4 z-40 bg-black/50 backdrop-blur-md p-2 rounded-full border border-white/10 shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <IconBrandInstagram className="h-5 w-5 text-white" />
+          </div>
+        )}
         <div className="relative z-40 p-8 text-left">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}

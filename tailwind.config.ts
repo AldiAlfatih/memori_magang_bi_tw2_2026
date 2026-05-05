@@ -16,6 +16,7 @@ const config = {
         border: "#CBCBCB",     // Silver
         primary: "#777C6D",
         secondary: "#B7B89F",
+        "brand-dark": "#41431B",
         "glass-light": "rgba(255, 255, 255, 0.08)",
         "glass-border": "rgba(203, 203, 203, 0.15)",
       },

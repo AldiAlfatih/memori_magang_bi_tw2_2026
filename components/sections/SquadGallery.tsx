@@ -60,8 +60,8 @@ export default function SquadGallery() {
               onClick={() => setSelectedDivision(division)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-500 border ${
                 selectedDivision === division
-                  ? "bg-accent text-white border-accent shadow-lg shadow-accent/20"
-                  : "bg-white/50 text-foreground/60 border-border hover:border-accent hover:text-accent"
+                  ? "bg-brand-dark text-white border-brand-dark shadow-lg shadow-brand-dark/20"
+                  : "bg-white/50 text-brand-dark/60 border-border hover:border-brand-dark hover:text-brand-dark"
               }`}
             >
               {division}
@@ -90,9 +90,9 @@ export default function SquadGallery() {
 
 const MemberContent = ({ member }: { member: any }) => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
+    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-10 rounded-3xl mb-4">
+      <p className="text-brand-dark/70 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+        <span className="font-bold text-brand-dark dark:text-neutral-200">
           {member.role}
         </span>{" "}
         — {member.bio}

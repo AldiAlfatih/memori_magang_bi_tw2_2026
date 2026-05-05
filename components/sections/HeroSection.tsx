@@ -64,7 +64,7 @@ export default function HeroSection() {
           <TrueFocus 
             sentence="Q2 LEGACY 2026" 
             blurAmount={2}
-            borderColor="#B7B89F"
+            borderColor="#41431B"
             animationDuration={1}
             pauseBetweenAnimations={1}
           />
@@ -77,19 +77,20 @@ export default function HeroSection() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="glass max-w-2xl mx-auto rounded-3xl p-8 md:p-12"
         >
-          <div className="text-xl md:text-2xl font-light mb-4 tracking-tight">
+          <div className="text-xl md:text-2xl font-light mb-4 tracking-tight text-primary">
             <DecryptedText 
               text="Memorial Website Magang Triwulan 2 - 2026" 
               animateOn="view"
               revealDirection="center"
             />
           </div>
-          <h2 className="text-3xl md:text-4xl font-display mb-6 text-accent">
+          <h2 className="text-3xl md:text-4xl font-display mb-6 text-brand-dark">
             Bank Indonesia Sulawesi Selatan
           </h2>
-          <p className="text-lg opacity-80 leading-relaxed max-w-lg mx-auto">
-            Sebuah persembahan untuk mengabadikan setiap detik kenangan, tawa, dan kerja keras selama magang di Bank Indonesia.
+          <p className="text-lg text-foreground/80 leading-relaxed max-w-lg mx-auto">
+            Sebuah persembahan untuk mengabadikan setiap detik kenangan, tawa, dan kerja keras selama magang
           </p>
+          <p className="text-lg text-foreground/80 leading-relaxed max-w-lg mx-auto"> di Bank Indonesia.</p> 
         </motion.div>
       </div>
 
