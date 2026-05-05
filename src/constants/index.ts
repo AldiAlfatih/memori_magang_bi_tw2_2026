@@ -50,7 +50,7 @@ export const TEAM_MEMBERS = [
     division: "PUR",
     role: "IT",
     image: "/profil/Muhammad Aldi Alfatih - PUR.jpg",
-    bio: "Peace",
+    bio: "Tantangan adalah kesempatan",
     instagram: "https://instagram.com/AldiAlf_",
   },
   {
@@ -59,7 +59,7 @@ export const TEAM_MEMBERS = [
     division: "FDSEK",
     role: "IT",
     image: "/profil/Stevelin Friska - FDSEK.jpg",
-    bio: "Peace",
+    bio: "Satu-satunya batasanmu adalah pikiranmu sendiri.",
     instagram: "https://instagram.com/stvlnfrsk__",
   }
 ];
